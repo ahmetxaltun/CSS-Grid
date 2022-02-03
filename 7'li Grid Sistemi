@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://ahmetxaltun.blogspot.com/favicon.ico" type="image/x-icon">
+    <title>7'li Grid Sistemi - Ahmet Altun</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"> <!-- Icons -->
+
+    <style>
+
+/* 
+//////////////////////////////////////////////////////////////
+//                                                         //
+//  Title Name : 7'li grid sistemi                        //
+//  Author : Ahmet Altun								 //
+//  Site : https://ahmetxaltun.blogspot.com             //
+//                                                     //
+////////////////////////////////////////////////////////
+*/
+
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .grid-alani{
+            background-color: #b80610;
+            display: grid;
+            grid-template-columns: repeat(7,1fr); /* Sütun sayısı */
+            grid-gap: 10px; /* Gridler arası boşluk */
+            font-size: 14px;
+            padding: 15px 30px;
+        }
+
+        @media screen and (max-width: 1460px) {
+            .grid-alani{
+                grid-template-columns: repeat(3,1fr);
+            }
+        }
+
+        @media screen and (max-width: 700px) {
+            .grid-alani{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+
+        @media screen and (max-width: 612px) {
+            .grid-alani{
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+
+        .grid{
+            background-color: #d02831;
+            border-radius: 5px;
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+            align-items: center;
+            color: white;
+            transition: all .5s;
+            padding: 15px;
+        }
+
+       .grid:hover{
+            background-color: white;
+            color: #d02831;
+        }
+
+        .grid i{
+            font-size: 20px;
+            text-align: center;
+            margin: 0 14px;
+        }
+
+        #bilgi{
+            width: 400px;
+            border: 1px solid rgba(128, 128, 128, 0.514);
+            border-radius: 5px;
+            margin: 50px 0 0 10px;
+            padding: 15px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.473);
+        }
+
+        kbd{
+            color: white;
+            background-color: red;
+            border-radius: 5px;
+            padding: 1px 5px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1 style="margin: 15px 0; text-align: center;">7'li Grid Sistemi</h1>
+    
+    <div class="grid-alani">
+
+        <div class="grid">
+            <i class="bi bi-pencil-square"></i> 
+            <b>Grid 1</b>
+        </div>
+
+        <div class="grid">
+            <i class="bi bi-person-fill"></i>
+            <b>Grid 2</b>
+        </div>
+
+        <div class="grid">
+            <i class="bi bi-laptop"></i>
+            <b>Grid 3</b>
+        </div>
+
+        <div class="grid">
+            <i class="bi bi-telephone-fill"></i>
+            <b>Grid 4</b>
+        </div>
+
+        <div class="grid">
+            <i class="bi bi-calendar3"></i>
+            <b>Grid 5</b>
+        </div>
+
+        <div class="grid">
+            <i class="bi bi-globe"></i>
+            <b>Grid 6</b>
+        </div>
+
+        <div class="grid">
+            <i class="bi bi-archive-fill"></i> 
+            <b>Grid 7</b>
+        </div>
+
+    </div>
+
+    <div id="bilgi">
+
+        <div style="color: green;"><i class="bi bi-info-square-fill"></i> <strong>BİLGİ - INFORMATION</strong></div>
+        <br><hr><br>
+        <p>
+            <kbd title="Türkçe - Turkish">TR</kbd> 7'li grid sistemi bilgisayar ekranlarında 7 sütün, 1460px ve altında 3 sütun, 700px ve altında 2 sütun, 612px ve altında 1 sütun olarak görünecek şekilde ayarlanmıştır. Bunu kendi kullanımınıza göre özelleştirebilirsiniz.
+
+            <br><br>
+
+            <kbd title="English - İngilizce">EN</kbd> In 7-grid system computers, it is set to 7 columns, 1460px and below, 3 columns, 700px and below, 2 columns, 612px and 1 column. You can customize it for your own use. <i class="bi bi-info-circle-fill" title="Çeviri (Translated): Google Translate"></i>
+        </p>
+
+    </div>
+
+</body>
+</html>
